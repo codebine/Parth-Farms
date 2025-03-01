@@ -232,9 +232,11 @@ ul, ol {
   Header
 -----------------------*/
 
+
 .header-section.header-normal .menu-item {
 	-webkit-box-shadow: 0px 12px 15px rgba(36, 11, 12, 0.05);
 	box-shadow: 0px 12px 15px rgba(36, 11, 12, 0.05);
+	background-color: #212529;
 }
 .top-nav {
 	border-bottom: 1px solid #e5e5e5;
@@ -384,7 +386,7 @@ ul, ol {
 }
 .menu-item .nav-menu .mainmenu li a {
 	font-size: 16px;
-	color: #19191a;
+	color: #fff;
 	margin-right: 42px;
 	font-weight: 500;
 	display: inline-block;
@@ -2383,4 +2385,3 @@ ul, ol {
     height: auto;
     display: block;
 }
-	
