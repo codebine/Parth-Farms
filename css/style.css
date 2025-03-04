@@ -2037,13 +2037,13 @@ a {
 	}
 	.canvas-open {
 		position: absolute;
-		right: 40px;
+		right: 80px;
 		top: 25px;
-		font-size: 22px;
+		font-size: 55px;
 		width: 30px;
 		height: 30px;
 		color: #fff;
-		border: 1px solid #fff;
+		/* border: 1px solid #fff; */
 		border-radius: 2px;
 		line-height: 33px;
 		text-align: center;
