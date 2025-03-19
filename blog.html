@@ -312,6 +312,47 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Create a modal container dynamically
+    const modal = document.createElement("div");
+    modal.classList.add("fullscreen-modal");
+
+    // Create an image element inside the modal
+    const modalImg = document.createElement("img");
+    modal.appendChild(modalImg);
+
+    // Create a close button
+    const closeBtn = document.createElement("span");
+    closeBtn.innerHTML = "&times;";
+    closeBtn.classList.add("close-modal");
+    modal.appendChild(closeBtn);
+
+    // Append modal to body
+    document.body.appendChild(modal);
+
+    // Add click event to each blog-item
+    document.querySelectorAll(".blog-item").forEach(item => {
+        item.addEventListener("click", function () {
+            const imgSrc = this.getAttribute("data-setbg");
+            modalImg.src = imgSrc;
+            modal.style.display = "flex";
+        });
+    });
+
+    // Close modal when clicking close button or outside the image
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+    </script>
 </body>
 
 </html>
