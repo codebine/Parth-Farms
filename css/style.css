@@ -736,13 +736,25 @@ a {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
     z-index: 1;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.hp-room-item:hover::before {
+    opacity: 1; /* Show overlay on hover */
 }
 
 .hr-text {
     position: relative;
-    z-index: 2; /* Ensures the text appears above the overlay */
+    z-index: 2; /* Ensures text appears above the overlay */
     color: white; /* Ensures text is readable */
+    transition: color 0.3s ease-in-out; /* Smooth text transition */
 }
+
+.hp-room-item:hover .hr-text {
+    color: white; /* Keep text visible on hover */
+}
+
 
 
 
