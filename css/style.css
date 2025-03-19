@@ -2075,7 +2075,7 @@ a {
 	.offcanvas-menu-wrapper .canvas-close {
 		height: 30px;
 		width: 30px;
-		border: 1px solid #19191a;
+		/* border: 1px solid #19191a; */
 		border-radius: 50%;
 		text-align: center;
 		line-height: 30px;
