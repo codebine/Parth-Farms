@@ -194,7 +194,6 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="room-details-item">
-                        <!-- <img src="img/Pictures14.avif" alt=""> -->
                         <div class="container text-center mt-5">
                             <img id="mainImage" src="img/Pictures03.avif" class="img-fluid main-image"
                                 alt="Main Display">
@@ -511,6 +510,24 @@
         function changeImage(src) {
             document.getElementById('mainImage').src = src;
         }
+        let thumbnails = document.querySelectorAll('.thumbnail');
+let mainImage = document.getElementById('mainImage');
+let index = 0;
+
+function changeImageAuto() {
+    mainImage.src = thumbnails[index].src;
+    index = (index + 1) % thumbnails.length;
+}
+
+// Run the function every 3 seconds
+setInterval(changeImageAuto, 3000);
+
+// Allow manual image change on click
+function changeImage(src) {
+    mainImage.src = src;
+    index = [...thumbnails].findIndex(img => img.src.includes(src)); // Update index for auto-scroll
+}
+
     </script>
 </body>
 
