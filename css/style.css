@@ -2073,7 +2073,7 @@ a {
 	.offcanvas-menu-overlay.active {
 		visibility: visible;
 	}
-	/* .canvas-open {
+	.canvas-open {
 		position: absolute;
 		right: 40px;
 		top: 25px;
@@ -2081,22 +2081,6 @@ a {
 		width: 30px;
 		height: 30px;
 		color: #fff;
-		border-radius: 2px;
-		line-height: 33px;
-		text-align: center;
-		z-index: 100;
-		display: block;
-		cursor: pointer;
-	} */
-	.canvas-open {
-		position: absolute;
-		right: 300px;
-		top: 32px;
-		font-size: 40px;
-		width: 30px;
-		height: 30px;
-		color: #fff;
-		/* border: 1px solid #fff; */
 		border-radius: 2px;
 		line-height: 33px;
 		text-align: center;
